@@ -385,6 +385,10 @@ section {
   gap: 3rem;
 }
 
+.wanted-poster-basket {
+  background-image: url("Basket_Putri.jpeg");
+}
+
 .wanted-poster {
   background: linear-gradient(180deg, #f4e4c1 0%, #e8d4b0 100%);
   border: 5px solid #2d1810;
