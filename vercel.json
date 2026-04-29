@@ -1,9 +1,9 @@
 {
   "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/forschamp.html"
-    }
+    { "source": "/", "destination": "/forschamp.html" },
+    { "source": "/merchandise", "destination": "/merchandise.html" },
+    { "source": "/fun-run", "destination": "/forschamp-fun-run.html" },
+    { "source": "/fest", "destination": "/forschamp-fest.html" },
+    { "source": "/payment", "destination": "/payment/payment.html" } 
   ]
 }
-
