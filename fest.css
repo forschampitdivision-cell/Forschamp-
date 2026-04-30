@@ -1,3 +1,4 @@
+/* --- 1. Reset & Base Styles --- */
 * {
   margin: 0;
   padding: 0;
@@ -9,14 +10,13 @@ body {
   background: #d4a574;
   color: #2d1810;
   overflow-x: hidden;
+  line-height: 1.6;
 }
 
+/* --- 2. Background & Environment --- */
 .desert-bg {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0; /* Shortcut top/left/width/height */
   z-index: -1;
   background: linear-gradient(180deg, #87ceeb 0%, #f4e4c1 50%, #d4a574 100%);
 }
@@ -25,7 +25,6 @@ body {
   content: "";
   position: absolute;
   bottom: 0;
-  left: 0;
   width: 100%;
   height: 200px;
   background: repeating-linear-gradient(
@@ -38,11 +37,7 @@ body {
   opacity: 0.3;
 }
 
-.logo-image {
-  width: 4rem;
-  height: 4rem;
-}
-
+/* Animasi Tumbleweed yang dioptimasi */
 .tumbleweed {
   position: absolute;
   width: 80px;
@@ -50,50 +45,18 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.4;
-  animation: floatAcross 25s ease-in-out infinite;
+  opacity: 0.5;
   filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.3));
-  will-change: transform, left;
-}
-
-.tumbleweed:nth-child(1) {
-  top: 25%;
-  left: 20%;
-  background-image: url("KAKTUS.png");
-  animation-duration: 30s;
-  animation-delay: -2s;
-}
-
-.tumbleweed:nth-child(2) {
-  top: 45%;
-  left: 50%;
-  background-image: url("MAGNET.png");
-  animation-duration: 50s;
-  animation-delay: -25s;
-}
-
-.tumbleweed:nth-child(3) {
-  top: 70%;
-  left: 80%;
-  background-image: url("SEPATU.png");
-  animation-duration: 30s;
-  animation-delay: -35s;
+  animation: floatAcross 25s linear infinite;
+  will-change: transform;
 }
 
 @keyframes floatAcross {
-  0% {
-    left: -100px;
-    transform: translateY(0px) rotate(0deg);
-  }
-  50% {
-    transform: translateY(-20px) rotate(180deg);
-  }
-  100% {
-    left: 110%;
-    transform: translateY(0px) rotate(360deg);
-  }
+  from { transform: translateX(-150px) rotate(0deg); }
+  to { transform: translateX(110vw) rotate(360deg); }
 }
 
+/* --- 3. Header & Navigation --- */
 header {
   position: fixed;
   top: 0;
@@ -105,371 +68,190 @@ header {
   z-index: 1000;
   background: linear-gradient(180deg, #5d4e37 0%, #3d2f1f 100%);
   border-bottom: 4px solid #8b6f47;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   font-family: "Rye", cursive;
-  font-size: 1.5rem;
+  font-size: clamp(1.2rem, 2vw, 1.8rem); /* Ukuran dinamis */
   color: #f4e4c1;
-  text-shadow: 3px 3px 0 #2d1810;
+  text-shadow: 2px 2px 0 #2d1810;
   text-decoration: none;
+}
+
+.logo-image {
+  width: 3.5rem;
+  height: 3.5rem;
+  object-fit: contain;
 }
 
 .back-btn {
-  padding: 0.8rem 2rem;
+  padding: 0.6rem 1.5rem;
   background: linear-gradient(180deg, #8b4513 0%, #5d2f0f 100%);
   color: #f4e4c1;
-  border: 3px solid #2d1810;
-  border-radius: 5px;
+  border: 2px solid #2d1810;
+  border-radius: 4px;
   font-family: "Rye", cursive;
-  font-weight: bold;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: all 0.3s;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  box-shadow: 3px 3px 0 #2d1810;
+  font-size: 0.9rem;
   text-decoration: none;
-  display: inline-block;
+  box-shadow: 3px 3px 0 #2d1810;
+  transition: 0.2s ease-in-out;
 }
 
 .back-btn:hover {
-  background: linear-gradient(180deg, #a0522d 0%, #6d3610 100%);
   transform: translate(-2px, -2px);
   box-shadow: 5px 5px 0 #2d1810;
+  filter: brightness(1.1);
 }
 
+/* --- 4. Hero Section --- */
 .hero {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 120px 5% 60px;
   text-align: center;
-  padding: 150px 5% 100px;
-}
-
-.wooden-sign {
-  margin-bottom: 2rem;
-}
-
-.announcement {
-  display: inline-block;
-  padding: 1rem 3rem;
-  background: linear-gradient(180deg, #8b6f47 0%, #5d4e37 100%);
-  border: 4px solid #2d1810;
-  border-radius: 10px;
-  font-size: 1rem;
-  letter-spacing: 2px;
-  color: #f4e4c1;
-  box-shadow: 5px 5px 0 #2d1810;
-  animation: swingSign 3s ease-in-out infinite;
-}
-
-@keyframes swingSign {
-  0%,
-  100% {
-    transform: rotate(-2deg);
-  }
-  50% {
-    transform: rotate(2deg);
-  }
 }
 
 .western-title {
   font-family: "Rye", cursive;
-  font-size: 6rem;
-  font-weight: 900;
-  line-height: 1.2;
-  margin: 1rem 0;
+  font-size: clamp(2.5rem, 8vw, 6rem); /* Responsive otomatis! */
   color: #f4e4c1;
-  text-shadow: 5px 5px 0 #2d1810, -2px -2px 0 #8b6f47;
-}
-
-.subtitle-banner {
-  padding: 1rem 3rem;
-  background: linear-gradient(180deg, #cd853f 0%, #8b4513 100%);
-  border: 4px solid #2d1810;
+  text-shadow: 4px 4px 0 #2d1810, -1px -1px 0 #8b6f47;
   margin: 1rem 0;
-  box-shadow: 5px 5px 0 #2d1810;
+  text-transform: uppercase;
 }
 
-.subtitle-banner h2 {
-  font-family: "Rye", cursive;
-  font-size: 1.5rem;
+.wooden-sign .announcement {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background: #8b6f47;
+  border: 3px solid #2d1810;
   color: #f4e4c1;
-  letter-spacing: 4px;
-  text-shadow: 3px 3px 0 #2d1810;
+  font-family: 'Rye', cursive;
+  box-shadow: 4px 4px 0 #2d1810;
+  animation: swingSign 3s ease-in-out infinite;
+  transform-origin: top center;
 }
 
+@keyframes swingSign {
+  0%, 100% { transform: rotate(-3deg); }
+  50% { transform: rotate(3deg); }
+}
+
+/* --- 5. Content Layouts --- */
 section {
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 80px 5%;
+  padding: 60px 5%;
 }
 
 .wood-section {
-  background: linear-gradient(180deg, #c9954a 0%, #8b6f47 100%);
-  border-top: 5px solid #5d4e37;
-  border-bottom: 5px solid #5d4e37;
-  box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.3);
-}
-
-.run-distance-container {
-  display: flex;
-  position: relative;
-  margin: 0;
-  justify-content: center;
-}
-
-.section-run-logo-right,
-.section-run-logo-left {
-  width: 100px;
-  height: 100px;
-  margin-right: 1rem;
+  background: #c9954a;
+  border-block: 5px solid #5d4e37;
+  box-shadow: inset 0 0 20px rgba(0,0,0,0.2);
 }
 
 .section-title {
   font-family: "Rye", cursive;
-  font-size: 3rem;
-  color: #2d1810;
-  text-shadow: 3px 3px 0 #f4e4c1;
+  font-size: clamp(1.8rem, 4vw, 3rem);
   text-align: center;
-  margin-bottom: 3rem;
-  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+  color: #2d1810;
+  text-shadow: 2px 2px 0 #f4e4c1;
 }
 
 .content-box {
-  background: linear-gradient(180deg, #f4e4c1 0%, #e8d4b0 100%);
-  border: 5px solid #2d1810;
-  padding: 3rem;
-  margin: 2rem 0;
-  box-shadow: 8px 8px 0 rgba(45, 24, 16, 0.3);
+  background: #f4e4c1;
+  border: 4px solid #2d1810;
+  padding: clamp(1.5rem, 5vw, 3rem);
+  margin-bottom: 2rem;
+  box-shadow: 8px 8px 0 rgba(45, 24, 16, 0.2);
 }
 
-.content-box h3 {
-  font-family: "Rye", cursive;
-  font-size: 2rem;
-  color: #8b4513;
-  margin-bottom: 1.5rem;
-  text-align: center;
-}
-
-.content-box p {
-  font-family: "Special Elite", cursive;
-  font-size: 1.1rem;
-  line-height: 1.8;
-  color: #2d1810;
-  margin-bottom: 1rem;
-}
-
+/* --- 6. Features Grid --- */
 .features-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  margin: 3rem 0;
+  gap: 1.5rem;
 }
 
 .feature-card {
-  background: linear-gradient(180deg, #8b6f47 0%, #5d4e37 100%);
-  border: 5px solid #2d1810;
+  background: #5d4e37;
+  border: 3px solid #2d1810;
   padding: 2rem;
   text-align: center;
-  box-shadow: 5px 5px 0 rgba(45, 24, 16, 0.5);
-  transition: all 0.3s;
+  color: #f4e4c1;
+  transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .feature-card:hover {
-  transform: translateY(-10px) rotate(-2deg);
+  transform: translateY(-8px);
+  background: #6d5d45;
 }
 
 .feature-icon {
-  font-size: 4rem;
+  font-size: 3.5rem;
   margin-bottom: 1rem;
+  display: block;
 }
 
-.feature-card h4 {
-  font-family: "Rye", cursive;
-  font-size: 1.5rem;
-  color: #ffd700;
-  margin-bottom: 1rem;
-}
-
-.feature-card p {
-  font-family: "Special Elite", cursive;
-  color: #f4e4c1;
-  line-height: 1.6;
-}
-
-.distance-options {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  margin: 3rem 0;
-}
-
-.distance-card {
-  background: linear-gradient(180deg, #f4e4c1 0%, #e8d4b0 100%);
-  border: 5px solid #2d1810;
-  padding: 2rem;
-  text-align: center;
-  box-shadow: 8px 8px 0 rgba(45, 24, 16, 0.3);
-  transition: all 0.3s;
-}
-
-.distance-card:hover {
-  transform: scale(1.05);
-}
-
-.distance-icon {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-.distance-card h4 {
-  font-family: "Rye", cursive;
-  font-size: 1.8rem;
-  color: #8b4513;
-  margin-bottom: 0.5rem;
-}
-
-.price {
-  font-family: "Rye", cursive;
-  font-size: 2rem;
-  color: #006400;
-  margin: 1rem 0;
-}
-
+/* --- 7. Registration & Payment --- */
 .payment-section {
   text-align: center;
-  margin: 4rem 0;
+  padding: 4rem 1rem;
 }
 
 .payment-btn {
   display: inline-block;
-  padding: 1.5rem 4rem;
-  background: linear-gradient(180deg, #ffd700 0%, #daa520 100%);
+  padding: 1.2rem 3.5rem;
+  background: #ffd700;
   color: #2d1810;
-  border: 5px solid #2d1810;
-  border-radius: 10px;
+  border: 4px solid #2d1810;
+  border-radius: 8px;
   font-family: "Rye", cursive;
-  font-size: 1.5rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  box-shadow: 8px 8px 0 #2d1810;
+  font-size: 1.4rem;
   text-decoration: none;
-  animation: pulse 2s ease-in-out infinite;
+  box-shadow: 6px 6px 0 #2d1810;
+  transition: 0.3s;
 }
 
 .payment-btn:hover {
-  background: linear-gradient(180deg, #ffed4e 0%, #f0c400 100%);
-  transform: translate(-3px, -3px);
-  box-shadow: 11px 11px 0 #2d1810;
+  transform: scale(1.05);
+  background: #ffed4e;
+  box-shadow: 8px 8px 0 #2d1810;
 }
 
-@keyframes pulse {
-  0%,
-  100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.05);
-  }
+/* --- 8. Reveal Animations (Untuk JS) --- */
+.reveal-hidden {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
 }
 
-.info-list {
-  list-style: none;
-  padding: 0;
+.reveal-active {
+  opacity: 1;
+  transform: translateY(0);
 }
 
-.info-list li {
-  font-family: "Special Elite", cursive;
-  color: #2d1810;
-  padding: 0.8rem 0;
-  padding-left: 2.5rem;
-  position: relative;
-  line-height: 1.8;
-  font-size: 1.1rem;
-}
-
-.info-list li::before {
-  content: "🤠";
-  position: absolute;
-  left: 0;
-  font-size: 1.5rem;
-}
-
+/* --- 9. Footer --- */
 footer {
-  background: linear-gradient(180deg, #5d4e37 0%, #3d2f1f 100%);
-  border-top: 5px solid #2d1810;
+  background: #3d2f1f;
   padding: 3rem 5%;
   text-align: center;
-}
-
-.footer-content {
-  font-family: "Special Elite", cursive;
   color: #f4e4c1;
+  border-top: 5px solid #2d1810;
 }
 
-.footer-content h3 {
-  font-family: "Rye", cursive;
-  font-size: 2rem;
-  color: #ffd700;
-  margin-bottom: 1rem;
-}
-
-.contact-info {
-  font-size: 1.1rem;
-  margin: 1rem 0;
-}
-
-@media (max-width: 768px) {
-  .western-title {
-    font-size: 2rem;
-  }
-
-  .direction {
-    justify-content: center;
-    align-items: center;
-    margin: 2rem;
-    margin-top: 3rem;
-  }
-  .back-btn {
-    padding: 1rem;
-    margin-left: 1rem;
-    font-size: 0.8rem;
-    align-items: center;
-  }
-
-  .subtitle-banner h2 {
-    font-size: 1rem;
-    letter-spacing: 2px;
-  }
-
-  .section-title {
-    font-size: 2rem;
-  }
-
-  .content-box {
-    padding: 1.5rem;
-  }
-
-  .payment-btn {
-    padding: 1rem 2rem;
-    font-size: 1.2rem;
-  }
-
-  .section-run-logo-right {
-    margin-right: 1.5rem;
-  }
-  .section-run-logo-left {
-    margin-left: 1.5rem;
-  }
+/* --- 10. Mobile Adjustments --- */
+@media (max-width: 600px) {
+  header { padding: 0.8rem 3%; }
+  .logo-text { display: none; } /* Sembunyikan teks logo di HP biar ga sesak */
+  .hero { padding-top: 100px; }
+  .content-box { padding: 1.2rem; }
 }
