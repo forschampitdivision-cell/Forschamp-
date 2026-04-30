@@ -145,3 +145,13 @@ if (logo) {
 }
 
 console.log("🤠 FORSCHAMP 2026: System Initialized. Yeehaw!");
+
+const menuBtn = document.querySelector('.mobile-menu-btn');
+const nav = document.querySelector('nav');
+
+menuBtn.addEventListener('click', () => {
+  nav.classList.toggle('active');
+  // Opsional: ganti icon hamburger jadi silang
+  menuBtn.classList.toggle('open'); 
+});
+
