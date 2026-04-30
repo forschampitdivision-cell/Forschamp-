@@ -86,12 +86,11 @@ nav {
   width: 100%;
 }
 
-/* --- Wanted Poster Optimization --- */
 .wanted-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2.5rem;
-  padding: 2rem 0;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* 280px lebih aman untuk HP kecil */
+  gap: 1.5rem;
+  width: 100%;
 }
 
 .wanted-poster {
@@ -143,6 +142,30 @@ nav {
     text-align: center;
     margin: 1rem 0; /* Ubah dari 50% ke margin normal */
     width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: -100%; /* Sembunyi di kiri */
+    width: 70%;  /* Lebar menu mobile */
+    height: 100vh;
+    background: #3d2f1f;
+    padding: 100px 20px;
+    transition: 0.3s ease-in-out;
+    z-index: 999;
+  }
+
+  nav.active {
+    left: 0; /* Muncul saat tombol diklik */
+  }
+  
+  .dropdown {
+    width: 100%; /* Agar dropdown memenuhi lebar menu mobile */
   }
 }
 
