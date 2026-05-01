@@ -99,7 +99,28 @@ nav {
   padding: 2rem;
   text-align: center;
   box-shadow: 8px 8px 0 rgba(45, 24, 16, 0.3);
+<<<<<<< HEAD
   transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+=======
+  transition: all 0.3s;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.foto-basket {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.wanted-poster::before {
+  content: "📌";
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+>>>>>>> 80178ab (changes)
 }
 
 .wanted-poster:hover {
@@ -170,3 +191,4 @@ nav {
       width: 100%;
   }
 }
+      }  
