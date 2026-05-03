@@ -6,27 +6,25 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-
 <url>
-  <loc>https://forschamp-2026.vercel.app/</loc>
+  <loc>https://forschamp-2026.vercel.app/forschamp.html</loc>
   <lastmod>2026-05-03T09:50:04+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://forschamp-2026.vercel.app/fun-run</loc>
+  <loc>https://forschamp-2026.vercel.app/fun-run.html</loc>
   <lastmod>2026-05-03T09:50:05+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://forschamp-2026.vercel.app/fest</loc>
+  <loc>https://forschamp-2026.vercel.app/fest.html</loc>
   <lastmod>2026-05-03T09:50:05+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://forschamp-2026.vercel.app/merchandise</loc>
+  <loc>https://forschamp-2026.vercel.app/merchandise.html</loc>
   <lastmod>2026-05-03T09:50:05+00:00</lastmod>
   <priority>0.80</priority>
 </url>
-
 
 </urlset>
