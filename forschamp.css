@@ -322,15 +322,16 @@ nav a:hover {
 
 /* --- Poster Cover Image dengan Hover --- */
 .poster-cover {
-  width: calc(100% + 4rem);
+  width: 50rem;
   margin: -2rem -2rem 1.5rem -2rem;
-  height: 200px;
+  height: 400px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  position: relative;
+  position: absolute;
   overflow: hidden;
   transition: transform 0.5s ease;
+  z-index: -1;
 }
 
 /* Overlay default */
