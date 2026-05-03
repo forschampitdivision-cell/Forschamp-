@@ -587,7 +587,7 @@ footer {
 }
 
 /* --- Mobile Responsive --- */
-@media (max-width: 768px) {
+@media (max-width: 668px) {
   .mobile-menu-btn {
     display: flex;
   }
@@ -641,5 +641,13 @@ footer {
 
   .wanted-grid {
     grid-template-columns: 1fr;
+  }
+
+  .line1 {
+    font-size: 3rem;
+  }
+
+  .line2 {
+    font-size: 3rem;
   }
 }
