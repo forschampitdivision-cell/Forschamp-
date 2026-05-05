@@ -306,7 +306,6 @@ nav a:hover {
 }
 
 .wanted-poster::before {
-  content: "📌";
   position: absolute;
   top: -15px;
   left: 50%;
