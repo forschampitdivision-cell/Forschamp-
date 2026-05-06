@@ -201,7 +201,6 @@ section {
   display: block;
 }
 
-/* Styling Baru untuk Information agar lebih menarik */
 .info-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
