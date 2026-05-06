@@ -296,7 +296,7 @@ section {
   object-position: center;
   display: block;
   transition: transform 0.4s ease;
-  padding: 1rem;
+  padding: 10px;
 }
 
 .merch-card:hover .merch-img-wrap img {
@@ -349,10 +349,11 @@ section {
   margin: 1rem 0;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .merch-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 0.8rem;
+    gap: 1rem;
+    padding: 0 10px;
   }
 }
 
@@ -520,10 +521,19 @@ footer {
   }
 
   .merch-img-wrap {
-    height: 180px;
+    height: 200px;
   }
 
   .merch-name {
-    font-size: 1rem;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+  }
+
+  .merch-price {
+    font-size: 1.2rem;
+  }
+
+  .merch-info {
+    padding: 1rem 0.5rem;
   }
 }
