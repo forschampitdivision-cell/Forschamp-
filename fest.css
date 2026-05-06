@@ -239,11 +239,11 @@ section {
   margin: 0;
 }
 
-.wood-divider {
-  border: 0;
-  height: 4px;
-  background-image: linear-gradient(to right, transparent, #2d1810, transparent);
-  margin: 2rem 0;
+.info-divider {
+  width: 60%;
+  height: 3px;
+  background: #2d1810;
+  margin: 0.8rem auto 1rem;
 }
 
 .important-notes h4 {
