@@ -250,7 +250,7 @@ section {
 .merch-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 3rem;
+  gap: 1.5rem;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -280,7 +280,7 @@ section {
 
 .merch-img-wrap {
   width: 100%;
-  height: 560px;
+  height: 300px;
   overflow: hidden;
   border-bottom: 5px solid #2d1810;
   background: linear-gradient(180deg, #f4e4c1 0%, #e8d4b0 100%);
@@ -304,7 +304,7 @@ section {
 }
 
 .merch-info {
-  padding: 1.5rem 2rem 2rem;
+  padding: 1rem;
   text-align: center;
 }
 
@@ -322,7 +322,7 @@ section {
 
 .merch-name {
   font-family: "Rye", cursive;
-  font-size: 2rem;
+  font-size: 1.4rem;
   color: #2d1810;
   text-shadow: 2px 2px 0 rgba(139, 111, 71, 0.5);
   margin-bottom: 0.5rem;
@@ -349,9 +349,10 @@ section {
   margin: 1rem 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .merch-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
   }
 }
 
@@ -519,10 +520,14 @@ footer {
   }
 
   .merch-img-wrap {
-    height: 260px;
+    height: 180px;
   }
 
   .merch-name {
-    font-size: 1.5rem;
+    font-size: 1rem;
+  }
+    
+  .merch-desc {
+    display: none;
   }
 }
