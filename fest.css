@@ -240,7 +240,7 @@ section {
 }
 
 .info-divider {
-  width: 60%;
+  width: 100%;
   height: 3px;
   background: #2d1810;
   margin: 0.8rem auto 1rem;
