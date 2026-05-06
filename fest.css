@@ -210,24 +210,32 @@ section {
 
 .info-item {
   background: #d4a574; /* Warna tanah */
-  padding: 1rem;
+  padding: 1.5rem 1rem;
   border: 2px dashed #2d1810;
   text-align: center;
-  border-radius: 8px;
+  border-radius: 12px;
+  box-shadow: 4px 4px 0 rgba(45, 24, 16, 0.1);
+  transition: transform 0.2s;
+}
+
+.info-item:hover {
+  transform: translateY(-5px);
 }
 
 .info-label {
   display: block;
   font-family: "Rye", cursive;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: #5d2f0f;
   margin-bottom: 0.5rem;
   text-decoration: underline;
+  text-transform: uppercase;
 }
 
 .info-item p {
-  font-weight: bold;
-  font-size: 1.1rem;
+  font-weight: 800;
+  font-size: 1.2rem;
+  color: #2d1810;
   margin: 0;
 }
 
@@ -310,8 +318,18 @@ footer {
 
 /* --- 10. Mobile Adjustments --- */
 @media (max-width: 600px) {
-  header { padding: 0.8rem 3%; }
-  .logo-text { display: none; } /* Sembunyikan teks logo di HP biar ga sesak */
-  .hero { padding-top: 100px; }
-  .content-box { padding: 1.2rem; }
+  .info-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .western-title {
+    font-size: 3rem;
+
+  .payment-btn {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    width: 100%; 
+  }
 }
+
