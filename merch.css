@@ -249,8 +249,9 @@ section {
 
 .merch-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 1rem 1.5rem;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -322,7 +323,7 @@ section {
 
 .merch-name {
   font-family: "Rye", cursive;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   color: #2d1810;
   text-shadow: 2px 2px 0 rgba(139, 111, 71, 0.5);
   margin-bottom: 0.5rem;
@@ -337,7 +338,7 @@ section {
 
 .merch-desc {
   font-family: "Special Elite", cursive;
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 1.7;
   color: #3d2f1f;
 }
@@ -479,7 +480,7 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .western-title {
+  .section-title {
     font-size: 2rem;
   }
 
@@ -506,7 +507,8 @@ footer {
   }
 
   .payment-btn {
-    padding: 1rem 2rem;
+    width: 100%;
+    padding: 1rem;
     font-size: 1.2rem;
   }
 
@@ -521,11 +523,11 @@ footer {
   }
 
   .merch-img-wrap {
-    height: 350px;
+    height: 250px;
   }
 
   .merch-name {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     letter-spacing: 1px;
   }
 
@@ -538,7 +540,8 @@ footer {
   }
 
   .merch-desc {
+    font-size: 0.9rem;
     display: block; 
-    font-size: 0.95rem;
+    
   }
 }
