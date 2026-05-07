@@ -7,7 +7,7 @@
 
 body {
   font-family: "Special Elite", cursive;
-  background: #d4a574;
+  background: #d4a574; 
   color: #2d1810;
   overflow-x: hidden;
   line-height: 1.6;
@@ -569,8 +569,8 @@ footer {
 }
 
 .contact-info {
-  font-size: 0.85rem !important;
-  color: #a08060 !important;
+  font-size: 0.85rem;
+  color: #a08060;
 }
 
 .footer-stars {
@@ -581,9 +581,9 @@ footer {
 }
 
 .copyright {
-  font-size: 0.8rem !important;
-  color: #8b6f47 !important;
-  margin-top: 1rem !important;
+  font-size: 0.8rem;
+  color: #8b6f47;
+  margin-top: 1rem;
 }
 
 /* --- Mobile Responsive --- */
