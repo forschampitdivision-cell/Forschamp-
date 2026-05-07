@@ -352,9 +352,10 @@ section {
 
 @media (max-width: 768px) {
   .merch-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-    padding: 0 10%;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 0 5
+      %;
   }
 }
 
@@ -523,11 +524,11 @@ footer {
   }
 
   .merch-img-wrap {
-    height: 200px;
+    height: 350px;
   }
 
   .merch-name {
-    font-size: 1.1rem;
+    font-size: 1.8rem;
     letter-spacing: 1px;
   }
 
@@ -540,7 +541,8 @@ footer {
   }
 
   .merch-desc { 
-    display: none;
+    display: block; 
+    font-size: 0.95rem;
     
   }
 }
