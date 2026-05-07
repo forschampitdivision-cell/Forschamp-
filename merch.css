@@ -260,6 +260,12 @@ section {
 }
 
 .merch-card {
+  background: linear-gradient(180deg, #f4e4c1 0%, #e8d4b0 100%);
+  border: 5px solid #2d1810;
+  box-shadow: 8px 8px 0 rgba(45, 24, 16, 0.35);
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s;
+  overflow: hidden;
   width: 100% !important;
   max-width: 320px;
   margin: 0 auto;
