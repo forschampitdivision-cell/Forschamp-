@@ -225,6 +225,7 @@ section {
   justify-content: center;
   gap: 1.5rem;
   margin-bottom: 4rem;
+  width: 100%;
 }
 
 .section-title {
@@ -232,8 +233,8 @@ section {
   font-size: 2.5rem;
   color: #2d1810;
   text-shadow: 3px 3px 0 #f4e4c1, -1px -1px 0 #8b6f47;
+  text-align: center;
   letter-spacing: 3px;
-  white-space: nowrap;
 }
 
 .rope-divider {
@@ -252,10 +253,11 @@ section {
 
 .merch-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
-  max-width: 1200px;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 1000px;
   margin: 0 auto;
+  padding: 20px;
 }
 
 .merch-card {
@@ -265,8 +267,8 @@ section {
   position: relative;
   transition: transform 0.3s, box-shadow 0.3s;
   overflow: hidden;
-  width: 100% !important;
-  max-width: 320px;
+  width: 100%
+  max-width: 350px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -360,9 +362,9 @@ section {
 @media (max-width: 768px) {
   .merch-grid {
     grid-template-columns: 1fr;
+    max-width: 100%;
     gap: 2rem;
-    padding: 0 5
-      %;
+    padding: 10px;
   }
 }
 
