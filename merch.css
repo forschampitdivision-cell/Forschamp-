@@ -177,7 +177,7 @@ header {
 
 .western-title {
   font-family: "Rye", cursive;
-  font-size: 6rem;
+  font-size: 4rem;
   font-weight: 900;
   line-height: 1.2;
   margin: 1rem 0;
@@ -195,7 +195,7 @@ header {
 
 .subtitle-banner h2 {
   font-family: "Rye", cursive;
-  font-size: 1.3rem;
+  font-size: 1rem;
   color: #f4e4c1;
   letter-spacing: 4px;
   text-shadow: 3px 3px 0 #2d1810;
