@@ -645,7 +645,8 @@ footer {
   }
 
   header {
-    padding: 0.8rem 4% !important;
+    padding: 0.8rem 3%;
+    gap: 0.5rem;
     display: flex !important;
     justify-content: space-between !important;
     align-items: center !important;
