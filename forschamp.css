@@ -820,7 +820,13 @@ footer {
     max-width: 90vw;
     overflow: hidden;
   }
-
+  
+  .footer-content h3 {
+    font-size: clamp(1rem, 4vw, 1.4rem) !important;
+    white-space: normal;
+    word-break: break-word;
+    line-height: 1.3;
+  }
   .section-title {
     font-size: clamp(1rem, 4.5vw, 1.6rem) !important;
     letter-spacing: 1px;
