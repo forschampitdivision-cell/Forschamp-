@@ -842,3 +842,21 @@ footer {
     font-size: 0.8rem;
   }
 }
+
+  .footer-saloon {
+    padding: 0 1rem;
+  }
+ 
+  .saloon-sign p,
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 0.8rem;
+    white-space: normal;
+    word-break: break-all;
+    text-align: center;
+  }
+}
+
