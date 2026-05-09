@@ -56,28 +56,56 @@ body {
   will-change: transform, left;
 }
 
-.tumbleweed:nth-child(1) {
-  top: 25%;
-  left: 20%;
-  background-image: url("KAKTUS.png");
-  animation-duration: 30s;
-  animation-delay: -2s;
+.tumbleweed.kaktus {
+  background-image: url('images/KAKTUS.png');
+  top: 15%;
+  animation-duration: 20s;
+  animation-delay: -3s;
+  width: 60px;
+  height: 60px;
 }
 
-.tumbleweed:nth-child(2) {
+.tumbleweed.topi {
+  background-image: url('images/TOPI.png');
   top: 45%;
-  left: 50%;
-  background-image: url("MAGNET.png");
-  animation-duration: 50s;
-  animation-delay: -25s;
+  animation-duration: 35s;
+  animation-delay: -12s;
+  width: 70px;
+  height: 70px;
 }
 
-.tumbleweed:nth-child(3) {
+.tumbleweed.sepatu {
+  background-image: url('images/SEPATU.png');
   top: 70%;
-  left: 80%;
-  background-image: url("SEPATU.png");
-  animation-duration: 30s;
-  animation-delay: -35s;
+  animation-duration: 28s;
+  animation-delay: -20s;
+  width: 65px;
+  height: 65px;
+}
+
+.tumbleweed.magnet {
+  background-image: url('images/MAGNET.png');
+  top: 30%;
+  animation-duration: 32s;
+  animation-delay: -8s;
+  width: 65px;
+  height: 65px;
+}
+
+.tumbleweed.runner::after {
+  content: "🏃";
+  font-size: 3rem;
+  position: absolute;
+}
+
+.tumbleweed.runner {
+  background-image: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 55%;
+  animation-duration: 15s;
+  animation-delay: -5s;
 }
 
 @keyframes floatAcross {
