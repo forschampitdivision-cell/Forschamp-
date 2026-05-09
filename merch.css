@@ -529,8 +529,7 @@ footer {
     margin-left: 1rem;
     font-size: 0.8rem;
     align-items: center !important;
-    white-space: nowrap;
-    min-width: fit-content !important;
+    gap: 5px;
   }
 
   .subtitle-banner h2 {
