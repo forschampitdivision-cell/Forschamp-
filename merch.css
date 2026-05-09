@@ -525,14 +525,10 @@ footer {
   }
   
   .back-btn {
-    padding: 0.6rem 1.2rem !important;
-    margin-left: 0 !important;
-    font-size: 0.85rem !important;
-    display: flex !important;
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    font-size: 0.8rem;
     align-items: center !important;
-    gap: 5px;
-    white-space: nowrap !important;
-    min-width: fit-content !important;
   }
 
   .subtitle-banner h2 {
