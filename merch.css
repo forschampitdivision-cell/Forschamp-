@@ -39,8 +39,9 @@ body {
 }
 
 .logo-image {
-  width: 4rem;
-  height: 4rem;
+  width: 4.5rem;
+  height: 4.5rem;
+  object-fit: contain;
 }
 
 .tumbleweed {
@@ -111,11 +112,11 @@ header {
 .logo {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 15px;
   font-family: "Rye", cursive;
-  font-size: clamp(1.2rem, 2vw, 1.8rem); /* Ukuran dinamis */
+  font-size: 2.2rem;
   color: #f4e4c1;
-  text-shadow: 2px 2px 0 #2d1810;
+  text-shadow: 3px 3px 0 #2d1810;
   text-decoration: none;
 }
 
