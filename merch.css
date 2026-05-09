@@ -145,13 +145,13 @@ header {
 }
 
 .hero {
-  min-height: auto !important;
+  min-height: 100vh
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 120px 5% 40px !important;
+  padding: 150px 5% 100px
 }
 
 .wooden-sign {
@@ -187,10 +187,10 @@ header {
 }
 
 .subtitle-banner {
-  padding: 0.8rem 1.5rem !important;
+  padding: 1rem 3rem;
   background: linear-gradient(180deg, #cd853f 0%, #8b4513 100%);
   border: 4px solid #2d1810;
-  margin: 0.5rem 0 !important;
+  margin: 1rem 0;
   box-shadow: 5px 5px 0 #2d1810;
 }
 
@@ -225,7 +225,7 @@ section {
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
-  margin-bottom: 2rem !important;
+  margin-bottom: 4rem;
   width: 100%;
 }
 
@@ -522,7 +522,7 @@ footer {
   }
   
   .back-btn {
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     margin-left: 1rem;
     font-size: 0.8rem;
     align-items: center;
