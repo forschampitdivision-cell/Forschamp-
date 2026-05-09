@@ -633,23 +633,21 @@ footer {
 }
 
   .back-btn {
-    padding: 0.6rem 1rem !important; 
-    font-size: 0.9rem !important;
-    width: auto !important;           
-    min-width: fit-content !important; 
+    padding: 0.5rem 1rem !important; 
+    font-size: 0.8rem !important;
+    width: auto !important; 
+    min-width: 0 !important;
     margin: 0 !important;
-    display: inline-flex !important;
-    white-space: nowrap !important;    
-    box-shadow: 3px 3px 0 #2d1810 !important;
-    letter-spacing: 1px !important;
+    white-space: nowrap !important;
+    box-shadow: 2px 2px 0 #2d1810 !important;
   }
 
   header {
-    padding: 0.8rem 3%;
-    gap: 0.5rem;
     display: flex !important;
     justify-content: space-between !important;
     align-items: center !important;
+    padding: 0.5rem 5% !important;
+    height: 70px;
   }
 
   .logo-text {
