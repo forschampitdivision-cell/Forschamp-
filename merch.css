@@ -120,7 +120,7 @@ header {
 }
 
 .back-btn {
- padding: 0.6rem 1.5rem;
+  padding: 0.6rem 1.5rem;
   background: linear-gradient(180deg, #8b4513 0%, #5d2f0f 100%);
   color: #f4e4c1;
   border: 2px solid #2d1810;
