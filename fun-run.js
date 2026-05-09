@@ -1,3 +1,5 @@
+document.getElementById("elemen").style.display = "none";
+
 // Smooth scrolling
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
