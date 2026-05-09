@@ -601,3 +601,32 @@ footer {
   }
 }
 
+@media (max-width: 480px) {
+  .western-title {
+    font-size: clamp(2rem, 10vw, 4rem) !important;
+    letter-spacing: 2px;
+  }
+  
+  .subtitle-banner h2 {
+    font-size: clamp(0.7rem, 3.5vw, 1rem) !important;
+    letter-spacing: 1px;
+    white-space: normal;
+    word-break: break-word;
+  }
+
+  .footer-content h3 {
+    font-size: clamp(1rem, 4vw, 1.4rem) !important;
+    white-space: normal;
+    word-break: break-word;
+    line-height: 1.3;
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 0.8rem;
+  }
+}
+
