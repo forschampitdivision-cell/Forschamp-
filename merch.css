@@ -121,21 +121,16 @@ header {
 }
 
 .back-btn {
-  padding: 0.8rem 2rem;
+ padding: 0.6rem 1.5rem;
   background: linear-gradient(180deg, #8b4513 0%, #5d2f0f 100%);
   color: #f4e4c1;
-  border: 3px solid #2d1810;
-  border-radius: 5px;
+  border: 2px solid #2d1810;
+  border-radius: 4px;
   font-family: "Rye", cursive;
-  font-weight: bold;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: all 0.3s;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  box-shadow: 3px 3px 0 #2d1810;
+  font-size: 0.9rem;
   text-decoration: none;
-  display: inline-block;
+  box-shadow: 3px 3px 0 #2d1810;
+  transition: 0.2s ease-in-out;
 }
 
 .back-btn:hover {
