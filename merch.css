@@ -637,8 +637,9 @@ footer {
 
   header {
     padding: 0.5rem 4% !important;
-    height: auto !important;
-    min-height: 60px;
+    display: flex !important;
+    justify-content: space-between !important; 
+    align-items: center !important;
   }
 
   .logo-text {
