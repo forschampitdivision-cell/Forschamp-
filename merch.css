@@ -39,8 +39,8 @@ body {
 }
 
 .logo-image {
-  width: 5rem;
-  height: 5rem;
+  width: 4.5rem;
+  height: 4.5rem;
   object-fit: contain;
 }
 
@@ -114,7 +114,7 @@ header {
   align-items: center;
   gap: 15px;
   font-family: "Rye", cursive;
-  font-size: 5rem;
+  font-size: 7rem;
   color: #f4e4c1;
   text-shadow: 3px 3px 0 #2d1810;
   text-decoration: none;
