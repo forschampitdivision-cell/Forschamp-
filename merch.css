@@ -98,15 +98,14 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 1rem 5% !important;
-  gap: 10px;
-  display: flex !important;
-  justify-content: space-between !important;
-  align-items: center !important;
+  padding: 1rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   z-index: 1000;
   background: linear-gradient(180deg, #5d4e37 0%, #3d2f1f 100%);
   border-bottom: 4px solid #8b6f47;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
 .logo {
