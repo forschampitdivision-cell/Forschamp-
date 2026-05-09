@@ -121,16 +121,18 @@ header {
 }
 
 .back-btn {
-  padding: 0.6rem 1.5rem;
+  padding: 1rem 3rem;
   background: linear-gradient(180deg, #8b4513 0%, #5d2f0f 100%);
   color: #f4e4c1;
-  border: 2px solid #2d1810;
-  border-radius: 4px;
+  border: 3px solid #2d1810;
+  border-radius: 5px;
   font-family: "Rye", cursive;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   text-decoration: none;
-  box-shadow: 3px 3px 0 #2d1810;
+  letter-spacing: 2px;
+  box-shadow: 4px 4px 0 #2d1810;
   transition: 0.2s ease-in-out;
+  display: inline-block;
 }
 
 .back-btn:hover {
