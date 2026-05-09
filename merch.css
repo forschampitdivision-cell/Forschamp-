@@ -520,11 +520,11 @@ footer {
     margin: 2rem;
     margin-top: 3rem;
   }
+  
   .back-btn {
-    padding: 0.6rem 1.2rem !important;
+    padding: 1rem;
     margin-left: 1rem;
-    font-size: 0.8rem !important;
-    white-space: nowrap;
+    font-size: 0.8rem;
     align-items: center;
   }
 
