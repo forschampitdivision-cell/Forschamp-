@@ -631,14 +631,21 @@ footer {
 }
 
   .back-btn {
-    padding: 0.6rem 1.2rem !important;
+    padding: 0.6rem 1.2rem !important; 
     font-size: 0.85rem !important;
-    letter-spacing: 1px;
+    width: auto !important;           
+    min-width: fit-content !important; 
+    display: inline-block !important;
+    white-space: nowrap !important;    
+    box-shadow: 3px 3px 0 #2d1810 !important;
+    letter-spacing: 1px !important;
   }
 
   header {
-    padding: 0.8rem 3%;
-    gap: 0.5rem;
+    padding: 1rem 5% !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
   }
 
   .logo-text {
