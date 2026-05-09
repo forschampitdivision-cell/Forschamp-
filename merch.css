@@ -145,7 +145,7 @@ header {
 }
 
 .hero {
-  min-height: 100vh
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -190,8 +190,11 @@ header {
   padding: 1rem 3rem;
   background: linear-gradient(180deg, #cd853f 0%, #8b4513 100%);
   border: 4px solid #2d1810;
-  margin: 1rem 0;
+  margin: 1rem auto;;
   box-shadow: 5px 5px 0 #2d1810;
+  width: fit-content;
+  max-width: 90%;
+  display: inline-block;
 }
 
 .subtitle-banner h2 {
