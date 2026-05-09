@@ -633,14 +633,15 @@ footer {
 }
 
   .back-btn {
-    padding: 0.5rem 0.8rem;
-    font-size: 0.7rem;
+    padding: 0.6rem 1.2rem !important;
+    font-size: 0.85rem !important;
+    box-shadow: 3px 3px 0 #2d1810 !important;
+    white-space: nowrap !important;
     letter-spacing: 1px;
   }
 
   header {
-    padding: 0.8rem 3%;
-    gap: 0.5rem;
+    padding: 1rem 5% !important;
   }
 
   .logo-text {
