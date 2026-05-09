@@ -121,13 +121,13 @@ header {
 }
 
 .back-btn {
-  padding: 1.2rem 2.5rem;
+  padding: 0.6rem 1.5rem;
   background: linear-gradient(180deg, #8b4513 0%, #5d2f0f 100%);
   color: #f4e4c1;
   border: 3px solid #2d1810;
   border-radius: 5px;
   font-family: "Rye", cursive;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   text-decoration: none;
   letter-spacing: 2px;
   box-shadow: 4px 4px 0 #2d1810;
@@ -524,12 +524,14 @@ footer {
   }
   
   .back-btn {
-    padding: 0.4rem 0.8rem !important; 
-    font-size: 0.75rem !important;
+    padding: 0.3rem 0.7rem !important; 
+    font-size: 0.8rem !important;
     width: auto !important;
     min-width: 0 !important;
     margin: 0 !important; 
+    border-width: 2px !important;
     box-shadow: 2px 2px 0 #2d1810 !important;
+    line-height: 1.2 !important;
   }
 
   .subtitle-banner h2 {
@@ -637,6 +639,7 @@ footer {
 
   header {
     padding: 0.5rem 4% !important;
+    min-height: 60px;
     display: flex !important;
     justify-content: space-between !important; 
     align-items: center !important;
