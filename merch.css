@@ -134,9 +134,9 @@ header {
 }
 
 .back-btn:hover {
-  background: linear-gradient(180deg, #a0522d 0%, #6d3610 100%);
   transform: translate(-2px, -2px);
   box-shadow: 5px 5px 0 #2d1810;
+  filter: brightness(1.1);
 }
 
 .hero {
