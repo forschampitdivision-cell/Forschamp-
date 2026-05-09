@@ -513,7 +513,7 @@ footer {
     margin-top: 3rem;
   }
   .back-btn {
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     margin-left: 1rem;
     font-size: 0.8rem;
     align-items: center;
@@ -568,11 +568,6 @@ footer {
     
   }
 
-@media (max-width: 600px) {
-  section {
-    padding: 40px 15px; 
-  }
-
   .features-grid {
     grid-template-columns: 1fr; 
     gap: 1.2rem;
@@ -581,7 +576,7 @@ footer {
   .feature-card {
     padding: 1.5rem;
     width: 100%;
-    margin: 0 auto;
+    box-sizing: border-box;
   }
 
   .feature-icon {
