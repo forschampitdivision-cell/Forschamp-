@@ -702,3 +702,58 @@ footer {
     font-size: 3rem;
   }
 }
+
+  @media (max-width: 480px) {
+ 
+  .countdown-box {
+    padding: 1rem 0.5rem;
+    overflow: hidden;
+  }
+ 
+  .countdown-display {
+    gap: 0.2rem;
+    width: 100%;
+  }
+ 
+  .countdown-unit {
+    min-width: 0;
+    flex: 1;
+  }
+ 
+  .countdown-num {
+    font-size: clamp(1.2rem, 6vw, 1.8rem);
+  }
+ 
+  .countdown-sep {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+ 
+  .countdown-tag {
+    font-size: 0.55rem;
+    letter-spacing: 0;
+  }
+ 
+  .wooden-board {
+    padding: 1.2rem;
+    overflow: hidden;
+  }
+ 
+  .about-container {
+    padding: 0 0.5rem;
+  }
+ 
+  .wood-section,
+  .saloon-section {
+    padding: 3rem 4%;
+  }
+ 
+  .stat-badge {
+    min-width: 120px;
+    padding: 1rem;
+  }
+ 
+  .stat-number {
+    font-size: 1.5rem;
+  }
+}
