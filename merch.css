@@ -633,21 +633,20 @@ footer {
 }
 
   .back-btn {
-    padding: 0.5rem 1rem !important; 
-    font-size: 0.8rem !important;
-    width: auto !important; 
-    min-width: 0 !important;
-    margin: 0 !important;
-    white-space: nowrap !important;
-    box-shadow: 2px 2px 0 #2d1810 !important;
+    width: auto !important;           
+    min-width: fit-content !important; 
+    padding: 0.6rem 1.2rem !important; 
+    font-size: 0.85rem !important;     
+    white-space: nowrap !important;  
+    box-shadow: 3px 3px 0 #2d1810 !important;
+    display: inline-block !important;
   }
 
   header {
+    padding: 1rem 5% !important;
     display: flex !important;
     justify-content: space-between !important;
     align-items: center !important;
-    padding: 0.5rem 5% !important;
-    height: 70px;
   }
 
   .logo-text {
