@@ -121,18 +121,20 @@ header {
 }
 
 .back-btn {
-  padding: 1rem 3rem;
+  padding: 1.2rem 2.5rem;
   background: linear-gradient(180deg, #8b4513 0%, #5d2f0f 100%);
   color: #f4e4c1;
   border: 3px solid #2d1810;
   border-radius: 5px;
   font-family: "Rye", cursive;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   text-decoration: none;
   letter-spacing: 2px;
   box-shadow: 4px 4px 0 #2d1810;
   transition: 0.2s ease-in-out;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .back-btn:hover {
@@ -631,24 +633,25 @@ footer {
 }
 
   .back-btn {
-    padding: 0.6rem 1.2rem !important; 
-    font-size: 0.85rem !important;
+    padding: 0.6rem 1rem !important; 
+    font-size: 0.9rem !important;
     width: auto !important;           
     min-width: fit-content !important; 
-    display: inline-block !important;
+    margin: 0 !important;
+    display: inline-flex !important;
     white-space: nowrap !important;    
     box-shadow: 3px 3px 0 #2d1810 !important;
     letter-spacing: 1px !important;
   }
 
   header {
-    padding: 1rem 5% !important;
+    padding: 0.8rem 4% !important;
     display: flex !important;
     justify-content: space-between !important;
     align-items: center !important;
   }
 
   .logo-text {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
