@@ -630,3 +630,19 @@ footer {
   }
 }
 
+@media (max-width: 480px) {
+  .back-btn {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+  }
+
+  header {
+    padding: 0.8rem 3%;
+    gap: 0.5rem;
+  }
+
+  .logo-text {
+    font-size: 1rem;
+  }
+}
