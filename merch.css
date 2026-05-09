@@ -98,10 +98,10 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 1rem 5%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  padding: 1rem 5% !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
   z-index: 1000;
   background: linear-gradient(180deg, #5d4e37 0%, #3d2f1f 100%);
   border-bottom: 4px solid #8b6f47;
