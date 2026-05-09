@@ -603,7 +603,7 @@ footer {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .western-title {
     font-size: clamp(2rem, 10vw, 4rem) !important;
     letter-spacing: 2px;
