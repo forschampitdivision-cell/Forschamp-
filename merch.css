@@ -100,9 +100,9 @@ header {
   width: 100%;
   padding: 1rem 5% !important;
   gap: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
   z-index: 1000;
   background: linear-gradient(180deg, #5d4e37 0%, #3d2f1f 100%);
   border-bottom: 4px solid #8b6f47;
@@ -525,10 +525,14 @@ footer {
   }
   
   .back-btn {
-    padding: 0.5rem 1rem;
-    margin-left: 1rem;
-    font-size: 0.8rem;
-    align-items: center;
+    padding: 0.6rem 1.2rem !important;
+    margin-left: 0 !important;
+    font-size: 0.85rem !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 5px;
+    white-space: nowrap !important;
+    min-width: fit-content !important;
   }
 
   .subtitle-banner h2 {
