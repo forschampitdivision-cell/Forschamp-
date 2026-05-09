@@ -523,10 +523,8 @@ footer {
   
   .back-btn {
     padding: 0.5rem 1rem;
-    margin-left: 1rem;
-    font-size: 0.8rem;
-    align-items: center !important;
-    gap: 5px; 
+    font-size: 0.7rem;
+    letter-spacing: 1px;
   }
 
   .subtitle-banner h2 {
