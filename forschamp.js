@@ -115,25 +115,40 @@ window.addEventListener(
 );
 
 // --- 7. Countdown Timer ---
-const countdownElement = document.getElementById("countdown-timer");
-if (countdownElement) {
-  const targetDate = new Date("August 15, 2026 00:00:00").getTime();
-  const updateCountdown = setInterval(() => {
-    const distance = targetDate - new Date().getTime();
-    if (distance < 0) {
-      clearInterval(updateCountdown);
-      countdownElement.textContent = "PENDAFTARAN DITUTUP";
-      return;
-    }
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    const hours = Math.floor(
-      (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
-    );
-    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    countdownElement.textContent = `${days} Hari ${hours} Jam ${minutes} Menit`;
-  }, 1000);
+const targetDate = new Date("July 31, 2026 00:00:00").getTime();
+
+function updateCountdown() {
+  const now = new Date().getTime();
+  const distance = targetDate - now;
+
+  if (distance < 0) {
+    document.getElementById("countdown-timer").innerHTML =
+      '<span style="color:#d4a574;font-family:Rye,cursive;font-size:1.5rem;">🏆 D-DAY FORSCHAMP!</span>';
+    return;
+  }
+
+  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  const hours = Math.floor(
+    (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
+  );
+  const mins = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  const secs = Math.floor((distance % (1000 * 60)) / 1000);
+
+  const pad = (n) => String(n).padStart(2, "0");
+
+  const dEl = document.getElementById("cd-days");
+  const hEl = document.getElementById("cd-hours");
+  const mEl = document.getElementById("cd-mins");
+  const sEl = document.getElementById("cd-secs");
+
+  if (dEl) dEl.textContent = pad(days);
+  if (hEl) hEl.textContent = pad(hours);
+  if (mEl) mEl.textContent = pad(mins);
+  if (sEl) sEl.textContent = pad(secs);
 }
 
+updateCountdown();
+setInterval(updateCountdown, 1000);
 // --- 8. Logo Interaction ---
 const logo = document.querySelector(".logo");
 if (logo) {
