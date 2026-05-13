@@ -72,41 +72,33 @@ body {
   to { transform: rotate(360deg); }
 }
 
+.kaktus { background-image: url('images/KAKTUS.png'); width: 60px; height: 60px; }
+.topi   { background-image: url('images/TOPI.png'); width: 70px; height: 70px; }
+.sepatu { background-image: url('images/SEPATU.png'); width: 65px; height: 65px; }
+.magnet { background-image: url('images/MAGNET.png'); width: 65px; height: 65px; }
+
 .v-kaktus { 
   top: 18%; 
-  width: 60px;
-  height: 60px;
   animation-duration: 30s; 
-  background-image: url('images/KAKTUS.png');
 }
 
 .v-magnet { 
   top: 25%; 
-  width: 65px; 
-  height: 65px; 
   animation-duration: 28s; 
   animation-delay: -5s;
-  background-image: url('images/MAGNET.png');
 }
 
 .v-topi { 
   top: 45%; 
-  width: 70px; 
-  height: 70px;
   animation-duration: 26s; 
   animation-delay: -15s;
-  background-image: url('images/TOPI.png');
 }
 
 .v-sepatu { 
   top: 85%; 
-  width: 65px; 
-  height: 65px;
   animation-duration: 24s; 
   animation-delay: -10s;
-  background-image: url('images/SEPATU.png');
 }
-
 .runner-wrap { top: 60%; animation-duration: 15s; }
 .runner { animation: none; display: flex; align-items: center; justify-content: center; background: none; }
 .runner::after { content: "🏃"; font-size: 3rem; }
