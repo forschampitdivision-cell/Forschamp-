@@ -43,70 +43,73 @@ body {
   height: 4rem;
 }
 
-.tumbleweed {
+.tumbleweed-wrapper {
   position: absolute;
+  left: -150px;
+  width: fit-content;
+  will-change: left;
+  animation: floatAcross 25s linear infinite;
+}
+
+.tumbleweed {
   width: 80px;
   height: 80px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.4;
-  animation: floatAcross 25s ease-in-out infinite;
-  filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.3));
-  will-change: transform, left;
+  opacity: 0.8;
+  filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
+  animation: slowRotate 10s linear infinite;
 }
 
-.tumbleweed.kaktus {
-  background-image: url('images/KAKTUS.png');
-  top: 15%;
-  animation-duration: 20s;
-  animation-delay: -3s;
+@keyframes floatAcross {
+  0% { left: -150px; }
+  100% { left: 115%; }
+}
+
+@keyframes slowRotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.v-kaktus { 
+  top: 18%; 
   width: 60px;
   height: 60px;
+  animation-duration: 30s; 
+  background-image: url('images/KAKTUS.png');
 }
 
-.tumbleweed.topi {
-  background-image: url('images/TOPI.png');
-  top: 45%;
-  animation-duration: 35s;
-  animation-delay: -12s;
-  width: 70px;
-  height: 70px;
-}
-
-.tumbleweed.sepatu {
-  background-image: url('images/SEPATU.png');
-  top: 70%;
-  animation-duration: 28s;
-  animation-delay: -20s;
-  width: 65px;
-  height: 65px;
-}
-
-.tumbleweed.magnet {
-  background-image: url('images/MAGNET.png');
-  top: 30%;
-  animation-duration: 32s;
-  animation-delay: -8s;
-  width: 65px;
-  height: 65px;
-}
-
-.tumbleweed.runner::after {
-  content: "🏃";
-  font-size: 3rem;
-  position: absolute;
-}
-
-.tumbleweed.runner {
-  background-image: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top: 55%;
-  animation-duration: 15s;
+.v-magnet { 
+  top: 25%; 
+  width: 65px; 
+  height: 65px; 
+  animation-duration: 28s; 
   animation-delay: -5s;
+  background-image: url('images/MAGNET.png');
 }
+
+.v-topi { 
+  top: 45%; 
+  width: 70px; 
+  height: 70px;
+  animation-duration: 26s; 
+  animation-delay: -15s;
+  background-image: url('images/TOPI.png');
+}
+
+.v-sepatu { 
+  top: 85%; 
+  width: 65px; 
+  height: 65px;
+  animation-duration: 24s; 
+  animation-delay: -10s;
+  background-image: url('images/SEPATU.png');
+}
+
+.runner-wrap { top: 60%; animation-duration: 15s; }
+.runner { animation: none; display: flex; align-items: center; justify-content: center; background: none; }
+.runner::after { content: "🏃"; font-size: 3rem; }
 
 @keyframes floatAcross {
   0% {
