@@ -64,9 +64,9 @@ body {
 .v-ml      { top: 20%; animation-delay: -25s; animation-duration: 45s; }
 .v-band    { top: 30%; animation-delay: -10s;  animation-duration: 32s; }
 .v-basket  { top: 40%; animation-delay: -18s; animation-duration: 38s; }
-.v-cc      { top: 50%; animation-delay: -22s; animation-duration: 28s; }
-.v-futsal  { top: 60%; animation-delay: -35s; animation-duration: 40s; }
-.v-solvoc  { top: 70%; animation-delay: -5s; animation-duration: 35s; }
+.v-cc      { top: 50%; animation-delay: -45s; animation-duration: 28s; }
+.v-futsal  { top: 60%; animation-delay: -37s; animation-duration: 40s; }
+.v-solvoc  { top: 70%; animation-delay: -50s; animation-duration: 35s; }
 .v-stortel { top: 80%; animation-delay: -30s; animation-duration: 42s; }
 
 @keyframes floatAcross {
