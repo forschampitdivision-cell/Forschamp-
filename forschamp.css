@@ -12,8 +12,6 @@ body {
   overflow-x: hidden;
   line-height: 1.6;
 }
-
-/* --- Background & Decorations --- */
 .desert-bg {
   position: fixed;
   inset: 0;
@@ -21,26 +19,55 @@ body {
   background: linear-gradient(180deg, #87ceeb 0%, #f4e4c1 50%, #d4a574 100%);
 }
 
-.tumbleweed {
+.tumbleweed-wrapper {
   position: absolute;
+  left: -150px;
+  width: fit-content;
+  will-change: left;
+  animation: floatAcross 25s linear infinite;
+}
+
+/* --- Elemen Animasi PUTAR --- */
+.tumbleweed {
   width: 80px;
   height: 80px;
   background-size: contain;
   background-repeat: no-repeat;
-  opacity: 0.4;
-  animation: floatAcross 25s ease-in-out infinite;
-  filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.3));
-  will-change: transform, left;
+  background-position: center;
+  opacity: 0.8;
+  filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
+  /* Animasi Putar saja */
+  animation: slowRotate 10s linear infinite;
 }
 
-.tumbleweed:nth-child(2) {
-  animation-delay: -8s;
-  top: 60%;
+/* Keyframes Terpisah */
+@keyframes floatAcross {
+  0% { left: -150px; }
+  100% { left: 115%; }
 }
-.tumbleweed:nth-child(3) {
-  animation-delay: -16s;
-  top: 80%;
+
+@keyframes slowRotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
+
+.md      { background-image: url('images/KAKTUS.png'); width: 60px; height: 60px; }
+.ml      { background-image: url('images/MAGNET.png'); width: 65px; height: 65px; }
+.band    { background-image: url('images/SEPATU.png'); width: 70px; height: 70px; }
+.basket  { background-image: url('images/logo.png'); width: 60px; height: 60px; }
+.cc      { background-image: url('images/TOPI.png'); width: 65px; height: 65px; }
+.futsal  { background-image: url('images/run\ distace\ logo.png'); width: 70px; height: 70px; }
+.solvoc  { background-image: url('images/KAKTUS.png'); width: 60px; height: 60px; }
+.stortel { background-image: url('images/SEPATU.png'); width: 65px; height: 65px; }
+
+.v-md      { top: 20%;  animation-delay: -2s;  animation-duration: 38s; }
+.v-ml      { top: 52%; animation-delay: -25s; animation-duration: 45s; }
+.v-band    { top: 25%; animation-delay: -10s;  animation-duration: 32s; }
+.v-basket  { top: 88%; animation-delay: -18s; animation-duration: 38s; }
+.v-cc      { top: 10%; animation-delay: -22s; animation-duration: 28s; }
+.v-futsal  { top: 40%; animation-delay: -35s; animation-duration: 40s; }
+.v-solvoc  { top: 60%; animation-delay: -5s; animation-duration: 35s; }
+.v-stortel { top: 35%; animation-delay: -30s; animation-duration: 42s; }
 
 @keyframes floatAcross {
   0% {
