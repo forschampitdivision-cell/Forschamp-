@@ -51,23 +51,23 @@ body {
   to { transform: rotate(360deg); }
 }
 
-.md      { background-image: url('FOTO LOMBA/monk MD.png'); width: 100px; height: 100px; }
+.md      { background-image: url('FOTO LOMBA/monk MD.png'); width: 110px; height: 110px; }
 .ml      { background-image: url('FOTO LOMBA/monk ML.png'); width: 100px; height: 100px; }
-.band    { background-image: url('FOTO LOMBA/monk band.png'); width: 100px; height: 100px; }
-.basket  { background-image: url('FOTO LOMBA/monk basket.png'); width: 120px; height: 120px; }
+.band    { background-image: url('FOTO LOMBA/monk band.png'); width: 110px; height: 110px; }
+.basket  { background-image: url('FOTO LOMBA/monk basket.png'); width: 150px; height: 150px; }
 .cc      { background-image: url('FOTO LOMBA/monk cerdas cermat.png'); width: 100px; height: 100px; }
 .futsal  { background-image: url('FOTO LOMBA/monk futsal.png'); width: 100px; height: 100px; }
-.solvoc  { background-image: url('FOTO LOMBA/monk solo vocal.png'); width: 100px; height: 100px; }
-.stortel { background-image: url('FOTO LOMBA/monk story telling.png'); width: 100px; height: 100px; }
+.solvoc  { background-image: url('FOTO LOMBA/monk solo vocal.png'); width: 130px; height: 130px; }
+.stortel { background-image: url('FOTO LOMBA/monk story telling.png'); width: 110px; height: 110px; }
 
-.v-md      { top: 20%;  animation-delay: -2s;  animation-duration: 38s; }
-.v-ml      { top: 52%; animation-delay: -25s; animation-duration: 45s; }
-.v-band    { top: 25%; animation-delay: -10s;  animation-duration: 32s; }
-.v-basket  { top: 88%; animation-delay: -18s; animation-duration: 38s; }
-.v-cc      { top: 10%; animation-delay: -22s; animation-duration: 28s; }
-.v-futsal  { top: 40%; animation-delay: -35s; animation-duration: 40s; }
-.v-solvoc  { top: 60%; animation-delay: -5s; animation-duration: 35s; }
-.v-stortel { top: 35%; animation-delay: -30s; animation-duration: 42s; }
+.v-md      { top: 10%;  animation-delay: -2s;  animation-duration: 38s; }
+.v-ml      { top: 20%; animation-delay: -25s; animation-duration: 45s; }
+.v-band    { top: 30%; animation-delay: -10s;  animation-duration: 32s; }
+.v-basket  { top: 40%; animation-delay: -18s; animation-duration: 38s; }
+.v-cc      { top: 50%; animation-delay: -22s; animation-duration: 28s; }
+.v-futsal  { top: 60%; animation-delay: -35s; animation-duration: 40s; }
+.v-solvoc  { top: 70%; animation-delay: -5s; animation-duration: 35s; }
+.v-stortel { top: 80%; animation-delay: -30s; animation-duration: 42s; }
 
 @keyframes floatAcross {
   0% {
