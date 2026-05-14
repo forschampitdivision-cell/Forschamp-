@@ -51,14 +51,14 @@ body {
   to { transform: rotate(360deg); }
 }
 
-.md      { background-image: url('images/KAKTUS.png'); width: 60px; height: 60px; }
-.ml      { background-image: url('images/MAGNET.png'); width: 65px; height: 65px; }
-.band    { background-image: url('images/SEPATU.png'); width: 70px; height: 70px; }
-.basket  { background-image: url('images/logo.png'); width: 60px; height: 60px; }
-.cc      { background-image: url('images/TOPI.png'); width: 65px; height: 65px; }
-.futsal  { background-image: url('images/run\ distace\ logo.png'); width: 70px; height: 70px; }
-.solvoc  { background-image: url('images/KAKTUS.png'); width: 60px; height: 60px; }
-.stortel { background-image: url('images/SEPATU.png'); width: 65px; height: 65px; }
+.md      { background-image: url('FOTO LOMBA/monk MD.png'); width: 60px; height: 60px; }
+.ml      { background-image: url('FOTO LOMBA/monk ML.png'); width: 65px; height: 65px; }
+.band    { background-image: url('FOTO LOMBA/monk band.png'); width: 70px; height: 70px; }
+.basket  { background-image: url('FOTO LOMBA/monk basket.png'); width: 60px; height: 60px; }
+.cc      { background-image: url('FOTO LOMBA/monk cerdas cermat.png'); width: 65px; height: 65px; }
+.futsal  { background-image: url('FOTO LOMBA/monk futsal.png'); width: 70px; height: 70px; }
+.solvoc  { background-image: url('FOTO LOMBA/monk solo vocal.png'); width: 60px; height: 60px; }
+.stortel { background-image: url('FOTO LOMBA/monk story telling.png'); width: 65px; height: 65px; }
 
 .v-md      { top: 20%;  animation-delay: -2s;  animation-duration: 38s; }
 .v-ml      { top: 52%; animation-delay: -25s; animation-duration: 45s; }
