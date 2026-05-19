@@ -45,7 +45,13 @@ body {
   opacity: 0.3;
 }
 
-/* Animasi Tumbleweed yang dioptimasi */
+.tumbleweed-wrapper {
+  position: absolute;
+  left: -150px;
+  width: fit-content;
+  will-change: left;
+  animation: floatAcross 25s linear infinite;
+}
 
 .tumbleweed {
   width: 80px;
@@ -55,7 +61,7 @@ body {
   background-position: center;
   opacity: 0.8;
   filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
-  animation: slowRotate 10s linear infinite;
+  animation: slowRotate 12s linear infinite;
 }
 
 @keyframes floatAcross {
@@ -68,36 +74,29 @@ body {
   to { transform: rotate(360deg); }
 }
 
-.kaktus { background-image: url('images/KAKTUS.png'); width: 60px; height: 60px; }
-.topi   { background-image: url('images/TOPI.png'); width: 70px; height: 70px; }
-.sepatu { background-image: url('images/SEPATU.png'); width: 65px; height: 65px; }
-.magnet { background-image: url('images/MAGNET.png'); width: 65px; height: 65px; }
+.v-gitar { top: 8%; animation-duration: 40s; animation-delay: -2s; }
+.gitar { animation: none; display: flex; align-items: center; justify-content: center; background: none; }
+.gitar::after { content: "🎸"; font-size: 3rem; }
 
-.v-kaktus { 
-  top: 18%; 
-  animation-duration: 30s; 
-}
+.v-mic { top: 22%; animation-duration: 32s; animation-delay: -12s; }
+.mic { animation: none; display: flex; align-items: center; justify-content: center; background: none; }
+.mic::after { content: "🎙️"; font-size: 3rem; }
 
-.v-magnet { 
-  top: 25%; 
-  animation-duration: 28s; 
-  animation-delay: -5s;
-}
+.v-piano { top: 62%; animation-duration: 20s; animation-delay: -15s; }
+.piano { animation: none; display: flex; align-items: center; justify-content: center; background: none; }
+.piano::after { content: "🎹"; font-size: 3rem; }
 
-.v-topi { 
-  top: 45%; 
-  animation-duration: 26s; 
-  animation-delay: -15s;
-}
+.v-dancer { top: 48%; animation-duration: 36s; animation-delay: -7s; }
+.dancer { animation: none; display: flex; align-items: center; justify-content: center; background: none; }
+.dancer::after { content: "🕺🏽"; font-size: 3rem; }
 
-.v-sepatu { 
-  top: 85%; 
-  animation-duration: 24s; 
-  animation-delay: -10s;
-}
-.runner-wrap { top: 60%; animation-duration: 15s; }
-.runner { animation: none; display: flex; align-items: center; justify-content: center; background: none; }
-.runner::after { content: "🏃"; font-size: 3rem; }
+.v-konfeti { top: 35%; animation-duration: 28s; animation-delay: -22s; }
+.konfeti { animation: none; display: flex; align-items: center; justify-content: center; background: none; }
+.konfeti::after { content: "🎉"; font-size: 3rem; }
+
+.v-kembang-api { top: 78%; animation-duration: 42s; animation-delay: -27s; }
+.kembang-api { animation: none; display: flex; align-items: center; justify-content: center; background: none; }
+.kembang-api::after { content: "🎆"; font-size: 3rem; }
 
 @keyframes floatAcross {
   0% {
