@@ -1513,3 +1513,270 @@ footer {
     padding: 1.5rem 2rem;
   }
 }
+
+/* ================================================================
+   RESPONSIVE – COMPREHENSIVE MOBILE & TABLET
+   Breakpoints:
+     ≤ 360px  → Very Small Mobile (small Android)
+     ≤ 480px  → Mobile Portrait
+     481–768px → Tablet Small / Large Mobile
+     769–1024px portrait  → Tablet Portrait
+     769–1024px landscape → Tablet Landscape
+     height ≤ 500px landscape → Mobile Landscape
+   ================================================================ */
+
+/* ── SHARED: ≤ 1024px ── */
+@media (max-width: 1024px) {
+  header        { padding: 0.8rem 4%; }
+  .hero         { padding: 120px 5% 80px; }
+  .announcement { font-size: 0.85rem; padding: 0.8rem 1.5rem; }
+  .western-title { font-size: 4.5rem; }
+
+  .tl-left  { padding-right: calc(50% + 40px); padding-left: 0; }
+  .tl-right { padding-left:  calc(50% + 40px); padding-right: 0; }
+}
+
+/* ── TABLET SMALL / LARGE MOBILE: 481px – 768px ── */
+@media (min-width: 481px) and (max-width: 768px) {
+  /* Header */
+  header        { padding: 0.7rem 3%; }
+  .logo-text    { font-size: 1.1rem; }
+  .logo-image   { width: 2.8rem; height: 2.8rem; }
+  .back-btn     { padding: 0.55rem 1rem; font-size: 0.75rem; letter-spacing: 1px; }
+
+  /* Hero */
+  .hero               { padding: 110px 6% 70px; min-height: 90vh; }
+  .western-title      { font-size: 3.8rem; }
+  .announcement       { font-size: 0.8rem; padding: 0.7rem 1.2rem; }
+  .subtitle-banner h2 { font-size: 1.1rem; letter-spacing: 3px; }
+  .hero-description   { font-size: 0.95rem; }
+  .tumbleweed         { width: 55px; height: 55px; }
+
+  /* Parchment Timeline – single column left-spine */
+  .tl-wanted-header { margin-bottom: 3.5rem; }
+  .tl-wanted-inner  { padding: 1.8rem 2.5rem; }
+  .tl-wanted-label  { font-size: 2.8rem; letter-spacing: 7px; }
+  .tl-wanted-title  { font-size: 1.5rem; letter-spacing: 4px; }
+  .tl-wanted-sub    { font-size: 0.85rem; }
+  .tl-wanted-seal   { font-size: 2rem; }
+
+  .tl-spine { left: 30px; width: 14px; }
+
+  .tl-item,
+  .tl-left,
+  .tl-right {
+    flex-direction: row !important;
+    justify-content: flex-end !important;
+    padding: 2rem 0 2rem 76px !important;
+  }
+  .tl-rope-h {
+    left: 58px !important;
+    right: auto !important;
+    width: 24px !important;
+    height: 5px;
+  }
+  .tl-star-node { left: 30px; width: 52px; height: 52px; }
+  .tl-star-label { font-size: 0.9rem; }
+
+  .tl-parchment  { width: 100%; padding: 1.6rem 1.8rem 2.2rem; }
+  .tl-p-title    { font-size: 1.4rem; }
+  .tl-p-icon     { font-size: 2.4rem; }
+  .tl-p-dates    { flex-direction: column; gap: 0.3rem; }
+  .tl-p-arrow    { transform: rotate(90deg); font-size: 1.1rem; }
+  .tl-p-date-val { font-size: 0.88rem; }
+  .tl-p-desc     { font-size: 0.88rem; }
+  .tl-p-stamp    { font-size: 0.8rem; bottom: 10px; right: 12px; }
+}
+
+/* ── MOBILE PORTRAIT: ≤ 480px ── */
+@media (max-width: 480px) {
+  /* Header */
+  header      { padding: 0.6rem 3%; flex-wrap: nowrap; }
+  .logo       { gap: 6px; }
+  .logo-text  { font-size: 1rem; letter-spacing: 1px; }
+  .logo-image { width: 2.2rem; height: 2.2rem; }
+  .back-btn   {
+    padding: 0.45rem 0.8rem;
+    font-size: 0.65rem;
+    letter-spacing: 0.5px;
+    border-width: 2px;
+    box-shadow: 2px 2px 0 #2d1810;
+  }
+
+  /* Hero */
+  .hero { padding: 100px 5% 60px; min-height: 85vh; }
+  .western-title { font-size: 2.6rem; line-height: 1.1; }
+  .announcement  { font-size: 0.7rem; padding: 0.55rem 0.9rem; letter-spacing: 0.5px; }
+  .subtitle-banner { padding: 0.7rem 1.2rem; margin: 0.6rem 0; }
+  .subtitle-banner h2 { font-size: 0.9rem; letter-spacing: 2px; }
+  .hero-description { font-size: 0.85rem; line-height: 1.6; }
+
+  /* Tumbleweed */
+  .tumbleweed { width: 40px; height: 40px; }
+  .kaktus     { width: 40px; height: 40px; }
+  .topi       { width: 45px; height: 45px; }
+  .sepatu     { width: 40px; height: 40px; }
+  .magnet     { width: 40px; height: 40px; }
+
+  section { padding: 60px 5% 60px; }
+
+  /* Parchment Timeline */
+  .timeline-section { padding: 60px 4% 80px; }
+  .tl-wanted-header { margin-bottom: 2.5rem; }
+  .tl-wanted-inner  { padding: 1.4rem 1.4rem 1.6rem; transform: none; }
+  .tl-wanted-eyebrow { font-size: 0.65rem; letter-spacing: 3px; }
+  .tl-wanted-label   { font-size: 2rem; letter-spacing: 5px; }
+  .tl-wanted-title   { font-size: 1.1rem; letter-spacing: 3px; }
+  .tl-wanted-sub     { font-size: 0.75rem; letter-spacing: 2px; }
+  .tl-wanted-seal    { font-size: 1.6rem; margin-top: 0.5rem; }
+  .tl-ornate-divider { width: 90%; }
+  .tl-pin            { width: 12px; height: 12px; }
+  .tl-pin-tl { left: 14px; }
+  .tl-pin-tr { right: 14px; }
+
+  .tl-spine { left: 22px; width: 12px; }
+
+  .tl-item,
+  .tl-left,
+  .tl-right {
+    flex-direction: row !important;
+    justify-content: flex-end !important;
+    padding: 1.6rem 0 1.6rem 62px !important;
+  }
+  .tl-rope-h {
+    left: 46px !important;
+    right: auto !important;
+    width: 20px !important;
+    height: 4px !important;
+  }
+  .tl-star-node  { left: 22px; width: 44px; height: 44px; }
+  .tl-star-label { font-size: 0.78rem; }
+  .tl-spine-wrap { gap: 0; }
+
+  /* Card */
+  .tl-parchment  { width: 100%; padding: 1.4rem 1.4rem 2rem; }
+  .tl-p-pin-tl   { left: 12px; }
+  .tl-p-pin-tr   { right: 12px; }
+  .tl-p-eyebrow  { font-size: 0.65rem; letter-spacing: 3px; }
+  .tl-p-icon     { font-size: 2rem; margin-bottom: 0.2rem; }
+  .tl-p-title    { font-size: 1.2rem; margin-bottom: 0.6rem; }
+  .tl-p-divider  { width: 95%; margin: 0.4rem auto; }
+  .tl-p-dates    { flex-direction: column; gap: 0.25rem; padding: 0.6rem 0.4rem; }
+  .tl-p-arrow    { transform: rotate(90deg); font-size: 1rem; }
+  .tl-p-date-lbl { font-size: 0.6rem; letter-spacing: 2px; }
+  .tl-p-date-val { font-size: 0.82rem; }
+  .tl-p-date-center { padding: 0.7rem 0.4rem; }
+  .tl-p-date-big { font-size: 1.15rem; }
+  .tl-p-desc     { font-size: 0.82rem; line-height: 1.7; }
+  .tl-p-stamp    { font-size: 0.7rem; bottom: 8px; right: 10px; padding: 0.15rem 0.45rem; border-width: 2px; }
+
+  /* Disable hover tilt on touch */
+  .tl-parchment:hover { transform: none; }
+
+  /* Footer */
+  footer { padding: 2rem 5%; }
+  .footer-content h3 { font-size: 1.4rem; }
+  .contact-info      { font-size: 0.9rem; }
+}
+
+/* ── VERY SMALL: ≤ 360px (small Android) ── */
+@media (max-width: 360px) {
+  .western-title   { font-size: 2rem; }
+  .logo-text       { display: none; }
+  .announcement    { font-size: 0.62rem; padding: 0.45rem 0.7rem; }
+
+  .tl-wanted-label { font-size: 1.6rem; letter-spacing: 4px; }
+  .tl-wanted-title { font-size: 0.95rem; letter-spacing: 2px; }
+  .tl-p-title      { font-size: 1rem; }
+  .tl-p-date-val   { font-size: 0.75rem; }
+
+  .tl-item,
+  .tl-left,
+  .tl-right {
+    padding: 1.3rem 0 1.3rem 54px !important;
+  }
+  .tl-rope-h     { width: 16px !important; }
+  .tl-spine      { left: 18px; }
+  .tl-star-node  { left: 18px; width: 38px; height: 38px; }
+  .tl-star-label { font-size: 0.7rem; }
+}
+
+/* ── MOBILE LANDSCAPE: height ≤ 500px & landscape ── */
+@media (max-height: 500px) and (orientation: landscape) {
+  header { padding: 0.5rem 4%; }
+  .logo-image { width: 2rem; height: 2rem; }
+  .logo-text  { font-size: 1rem; }
+  .back-btn   { padding: 0.4rem 0.8rem; font-size: 0.7rem; }
+
+  .hero               { min-height: 100vh; padding: 80px 8% 50px; }
+  .western-title      { font-size: 2.8rem; }
+  .announcement       { font-size: 0.7rem; padding: 0.5rem 1rem; }
+  .subtitle-banner    { padding: 0.5rem 1.5rem; margin: 0.5rem 0; }
+  .subtitle-banner h2 { font-size: 0.9rem; letter-spacing: 2px; }
+  .hero-description   { display: none; }
+
+  /* Keep 2-column zig-zag layout in landscape */
+  .tl-spine    { left: 50%; width: 14px; transform: translateX(-50%); }
+  .tl-item     { padding: 1.5rem 0; }
+  .tl-left     { padding-right: calc(50% + 35px) !important; padding-left: 0 !important; }
+  .tl-right    { padding-left:  calc(50% + 35px) !important; padding-right: 0 !important; }
+  .tl-rope-h   { height: 5px; }
+  .tl-rope-left  { left: calc(50% + 28px) !important; right: auto !important; width: auto !important; }
+  .tl-rope-right { right: calc(50% + 28px) !important; left: auto !important; width: auto !important; }
+  .tl-star-node  { left: 50%; transform: translateX(-50%); width: 48px; height: 48px; }
+  .tl-star-label { font-size: 0.85rem; }
+
+  .tl-wanted-header { margin-bottom: 2rem; }
+  .tl-wanted-inner  { padding: 1rem 2rem; transform: none; }
+  .tl-wanted-label  { font-size: 2rem; letter-spacing: 5px; }
+  .tl-wanted-title  { font-size: 1rem; letter-spacing: 3px; }
+  .tl-wanted-seal   { font-size: 1.4rem; margin-top: 0.3rem; }
+
+  .tl-parchment  { padding: 1.2rem 1.5rem 1.8rem; }
+  .tl-p-title    { font-size: 1.2rem; }
+  .tl-p-icon     { font-size: 2rem; }
+  .tl-p-dates    { flex-direction: row; gap: 0.6rem; }
+  .tl-p-arrow    { transform: none !important; font-size: 1.2rem; }
+  .tl-p-desc     { font-size: 0.82rem; }
+}
+
+/* ── TABLET PORTRAIT: 769px – 1024px portrait ── */
+@media (min-width: 769px) and (max-width: 1024px) and (orientation: portrait) {
+  header { padding: 0.9rem 4%; }
+  .western-title { font-size: 4.5rem; }
+
+  .tl-left  { padding-right: calc(50% + 46px); padding-left: 0; }
+  .tl-right { padding-left: calc(50% + 46px); padding-right: 0; }
+
+  .tl-wanted-inner { padding: 2rem 3.5rem; }
+  .tl-wanted-label { font-size: 3.4rem; letter-spacing: 9px; }
+  .tl-wanted-title { font-size: 1.8rem; }
+
+  .tl-parchment  { padding: 2rem 2.2rem 2.6rem; }
+  .tl-p-title    { font-size: 1.6rem; }
+  .tl-p-dates    { flex-direction: row; }
+  .tl-p-arrow    { transform: none !important; }
+}
+
+/* ── TABLET LANDSCAPE: 769px – 1024px landscape ── */
+@media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+  header { padding: 0.8rem 4%; }
+  .western-title { font-size: 4rem; }
+
+  .tl-spine  { left: 50%; width: 16px; transform: translateX(-50%); }
+  .tl-left   { padding-right: calc(50% + 44px); padding-left: 0; }
+  .tl-right  { padding-left: calc(50% + 44px); padding-right: 0; }
+  .tl-rope-left  { left: calc(50% + 30px); }
+  .tl-rope-right { right: calc(50% + 30px); }
+
+  .tl-star-node  { left: 50%; transform: translateX(-50%); width: 56px; height: 56px; }
+  .tl-parchment  { padding: 1.8rem 2rem 2.4rem; }
+  .tl-p-title    { font-size: 1.5rem; }
+  .tl-p-date-val { font-size: 0.9rem; }
+  .tl-p-dates    { flex-direction: row; }
+  .tl-p-arrow    { transform: none !important; }
+
+  .tl-wanted-inner { padding: 1.8rem 3rem; }
+  .tl-wanted-label { font-size: 3rem; letter-spacing: 8px; }
+  .tl-wanted-title { font-size: 1.6rem; }
+}

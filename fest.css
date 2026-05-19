@@ -46,22 +46,71 @@ body {
 }
 
 /* Animasi Tumbleweed yang dioptimasi */
+
 .tumbleweed {
-  position: absolute;
   width: 80px;
   height: 80px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.5;
-  filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.3));
-  animation: floatAcross 25s linear infinite;
-  will-change: transform;
+  opacity: 0.8;
+  filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
+  animation: slowRotate 10s linear infinite;
 }
 
 @keyframes floatAcross {
-  from { transform: translateX(-150px) rotate(0deg); }
-  to { transform: translateX(110vw) rotate(360deg); }
+  0% { left: -150px; }
+  100% { left: 115%; }
+}
+
+@keyframes slowRotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.kaktus { background-image: url('images/KAKTUS.png'); width: 60px; height: 60px; }
+.topi   { background-image: url('images/TOPI.png'); width: 70px; height: 70px; }
+.sepatu { background-image: url('images/SEPATU.png'); width: 65px; height: 65px; }
+.magnet { background-image: url('images/MAGNET.png'); width: 65px; height: 65px; }
+
+.v-kaktus { 
+  top: 18%; 
+  animation-duration: 30s; 
+}
+
+.v-magnet { 
+  top: 25%; 
+  animation-duration: 28s; 
+  animation-delay: -5s;
+}
+
+.v-topi { 
+  top: 45%; 
+  animation-duration: 26s; 
+  animation-delay: -15s;
+}
+
+.v-sepatu { 
+  top: 85%; 
+  animation-duration: 24s; 
+  animation-delay: -10s;
+}
+.runner-wrap { top: 60%; animation-duration: 15s; }
+.runner { animation: none; display: flex; align-items: center; justify-content: center; background: none; }
+.runner::after { content: "🏃"; font-size: 3rem; }
+
+@keyframes floatAcross {
+  0% {
+    left: -100px;
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(180deg);
+  }
+  100% {
+    left: 110%;
+    transform: translateY(0px) rotate(360deg);
+  }
 }
 
 /* --- 3. Header & Navigation --- */
