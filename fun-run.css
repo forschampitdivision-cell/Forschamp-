@@ -115,17 +115,17 @@ body {
 
 @media (max-width: 600px) {
   .tumbleweed {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
   }
 
   .runner, .sepatu, .finish {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
   }
 
   .runner::after, .sepatu::after, .finish::after {
-    font-size: 2.5rem; 
+    font-size: 3rem; 
   }  
 }
 
