@@ -103,11 +103,11 @@ body {
 
 .runner-wrap { top: 62%; animation-duration: 20s; animation-delay: -15s; }
 .runner { animation: none; display: flex; align-items: center; justify-content: center; background: none; }
-.runner::after { content: "🏃"; font-size: 3.5rem; }
+.runner::after { content: "🏃"; font-size: 3.7rem; }
 
 .sepatu-wrap { top: 35%; animation-duration: 28s; animation-delay: -22s; }
 .sepatu { animation: none; display: flex; align-items: center; justify-content: center; background: none; }
-.sepatu::after { content: "👟"; font-size: 3.5rem; }
+.sepatu::after { content: "👟"; font-size: 3.7rem; }
 
 .finish-wrap { top: 75%; animation-duration: 42s; animation-delay: -27s; }
 .finish { animation: none; display: flex; align-items: center; justify-content: center; background: none; }
@@ -115,17 +115,17 @@ body {
 
 @media (max-width: 600px) {
   .tumbleweed {
-    width: 55px;
-    height: 55px;
+    width: 70px;
+    height: 70px;
   }
 
   .runner, .sepatu, .finish {
-    width: 55px;
-    height: 55px;
+    width: 70px;
+    height: 70px;
   }
 
   .runner::after, .sepatu::after, .finish::after {
-    font-size: 2rem; 
+    font-size: 2.5rem; 
   }  
 }
 
