@@ -73,8 +73,8 @@ body {
 }
 
 .kaktus { background-image: url('images/KAKTUS.png'); width: 100px; height: 100px; }
-.topi   { background-image: url('images/TOPI.png'); width: 100px; height: 1000px; }
-.sepatu { background-image: url('images/SEPATU.png'); width: 100px; height: 100px; }
+.topi   { background-image: url('images/TOPI.png'); width: 100px; height: 100px; }
+.boots { background-image: url('images/SEPATU.png'); width: 100px; height: 100px; }
 .magnet { background-image: url('images/MAGNET.png'); width: 100px; height: 100px; }
 
 .v-kaktus { 
@@ -94,7 +94,7 @@ body {
   animation-delay: -15s;
 }
 
-.v-sepatu { 
+.v-boots { 
   top: 88%; 
   animation-duration: 24s; 
   animation-delay: -10s;
@@ -104,9 +104,9 @@ body {
 .runner { animation: none; display: flex; align-items: center; justify-content: center; background: none; }
 .runner::after { content: "🏃"; font-size: 3.5rem; }
 
-.sepatu lari-wrap { top: 35%; animation-duration: 20s; }
-.sepatu lari { animation: none; display: flex; align-items: center; justify-content: center; background: none; }
-.sepatu lari::after { content: "👟"; font-size: 3.5rem; }
+.sepatu-wrap { top: 35%; animation-duration: 20s; }
+.sepatu { animation: none; display: flex; align-items: center; justify-content: center; background: none; }
+.sepatu::after { content: "👟"; font-size: 3.5rem; }
 
 .finish-wrap { top: 72%; animation-duration: 35s; }
 .finish { animation: none; display: flex; align-items: center; justify-content: center; background: none; }
