@@ -160,4 +160,53 @@ if (logo) {
   });
 }
 
+// --- 9. Trail Timeline Scroll Animations ---
+const trailEvents = document.querySelectorAll(".trail-event");
+const trailLineFill = document.getElementById("trailLineFill");
+const trailTimeline = document.querySelector(".trail-timeline");
+
+// IntersectionObserver to reveal each card
+const trailObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const delay = parseInt(entry.target.dataset.trail) * 200;
+        setTimeout(() => {
+          entry.target.classList.add("trail-visible");
+        }, delay);
+        trailObserver.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.15, rootMargin: "0px 0px -40px 0px" }
+);
+
+trailEvents.forEach((ev) => trailObserver.observe(ev));
+
+// Fill the trail line based on scroll position
+function updateTrailLine() {
+  if (!trailTimeline || !trailLineFill) return;
+
+  const rect = trailTimeline.getBoundingClientRect();
+  const viewportH = window.innerHeight;
+  const timelineTop = rect.top;
+  const timelineH = rect.height;
+
+  if (timelineTop >= viewportH) {
+    trailLineFill.style.height = "0%";
+    return;
+  }
+  if (timelineTop + timelineH <= 0) {
+    trailLineFill.style.height = "100%";
+    return;
+  }
+
+  const scrolled = viewportH - timelineTop;
+  const pct = Math.min(Math.max((scrolled / (timelineH + viewportH * 0.3)) * 100, 0), 100);
+  trailLineFill.style.height = pct + "%";
+}
+
+window.addEventListener("scroll", updateTrailLine, { passive: true });
+updateTrailLine();
+
 console.log("🤠 FORSCHAMP 2026: System Initialized. Yeehaw!");
