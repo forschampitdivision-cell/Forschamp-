@@ -513,6 +513,7 @@ footer {
   .payment-btn {
     padding: 1rem 2rem;
     font-size: 1.2rem;
+    width: 100%; 
   }
 
   .section-run-logo-right {
@@ -1540,16 +1541,6 @@ footer {
   }
 }
 
-/* ================================================================
-   RESPONSIVE – COMPREHENSIVE MOBILE & TABLET
-   Breakpoints:
-     ≤ 360px  → Very Small Mobile (small Android)
-     ≤ 480px  → Mobile Portrait
-     481–768px → Tablet Small / Large Mobile
-     769–1024px portrait  → Tablet Portrait
-     769–1024px landscape → Tablet Landscape
-     height ≤ 500px landscape → Mobile Landscape
-   ================================================================ */
 
 /* ── SHARED: ≤ 1024px ── */
 @media (max-width: 1024px) {
@@ -1638,11 +1629,11 @@ footer {
   .hero-description { font-size: 0.85rem; line-height: 1.6; }
 
   /* Tumbleweed */
-  .tumbleweed { width: 40px; height: 40px; }
-  .kaktus     { width: 40px; height: 40px; }
-  .topi       { width: 45px; height: 45px; }
-  .sepatu     { width: 40px; height: 40px; }
-  .magnet     { width: 40px; height: 40px; }
+  .tumbleweed { width: 70px; height: 70px; }
+  .kaktus     { width: 70px; height: 70px; }
+  .topi       { width: 75px; height: 75px; }
+  .sepatu     { width: 70px; height: 70px; }
+  .magnet     { width: 70px; height: 70px; }
 
   section { padding: 60px 5% 60px; }
 
